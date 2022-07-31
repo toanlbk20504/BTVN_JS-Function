@@ -81,14 +81,12 @@ function tinhTienThue() {
   ).format(tienThue)} </h2>`;
 }
 //Cau 4
-
 function soKetNoi() {
   var loaiKhachHang = document.getElementById("loaiKhachHang").value;
   if (loaiKhachHang == "open") {
-    document.getElementById(
-      "a"
-    ).innerHTML = `<input type="text" name="" id="soKetNoi" class="form-control" placeholder="Số kết nối" >`;
-  } else if (loaiKhachHang == "close") {
+    $("#soKetNoi").show();
+  //  document.getElementById("a").innerHTML = `<input type="text" name="" id="soKetNoi" class="form-control" placeholder="Số kết nối" >`;
+  } if (loaiKhachHang == "close") {
     //  document.getElementById("a").innerHTML=``
     $("#soKetNoi").hide();
   }
